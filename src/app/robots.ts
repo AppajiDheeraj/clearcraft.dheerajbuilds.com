@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://clearcraft.dheerajbuilds.com/sitemap.xml",
-    host: "https://clearcraft.dheerajbuilds.com",
+    sitemap: "https://studio.dheerajbuilds.com/sitemap.xml",
+    host: "https://studio.dheerajbuilds.com",
   };
 }

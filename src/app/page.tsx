@@ -3,7 +3,7 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-center px-6">
       <div className="max-w-xl text-center">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.24em] text-foreground/60">
-          Clear Craft
+          Studio
         </p>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">
           Clear digital experiences are on the way.

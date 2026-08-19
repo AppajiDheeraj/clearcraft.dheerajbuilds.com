@@ -1,8 +1,8 @@
-# Clear Craft
+# Studio
 
-Clear Craft is a web design and development agency creating high-quality landing pages, UI/UX systems, and conversion-focused digital experiences.
+Studio is a web design and development agency creating high-quality landing pages, UI/UX systems, and conversion-focused digital experiences.
 
-The site is built with Next.js and is intended to run on Vercel with the custom domain `clearcraft.dheerajbuilds.com` managed through Cloudflare DNS.
+The site is built with Next.js and is intended to run on Vercel with the custom domain `studio.dheerajbuilds.com` managed through Cloudflare DNS.
 
 ## Stack
 
@@ -35,4 +35,4 @@ Connect the GitHub repository to Vercel and use `main` as the production branch.
 
 ## Brand
 
-**Clear Craft** — web experiences made clear.
+**Studio** — web experiences made clear.
