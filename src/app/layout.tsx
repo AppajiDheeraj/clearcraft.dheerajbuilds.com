@@ -32,19 +32,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className="h-full antialiased"
     >
       <head>
+        {/* SVG favicon — scales crisp at any size, supports dark/light mode natively */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        {/* ICO fallback for older browsers (IE, older Edge) */}
         <link rel="icon" href="/favicon-light.ico" type="image/x-icon" />
-        <link
-          rel="icon"
-          href="/favicon-light.ico"
-          type="image/x-icon"
-          media="(prefers-color-scheme: light)"
-        />
-        <link
-          rel="icon"
-          href="/favicon-dark.ico"
-          type="image/x-icon"
-          media="(prefers-color-scheme: dark)"
-        />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
