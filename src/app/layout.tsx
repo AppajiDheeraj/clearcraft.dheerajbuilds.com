@@ -1,5 +1,14 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const satoshi = localFont({
+  src: "./fonts/satoshi-medium.woff2",
+  weight: "500",
+  style: "normal",
+  variable: "--font-satoshi",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studio.dheerajbuilds.com"),
@@ -29,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className="h-full antialiased"
+      className={`${satoshi.variable} h-full antialiased`}
     >
       <head>
         {/* SVG favicon — scales crisp at any size, supports dark/light mode natively */}

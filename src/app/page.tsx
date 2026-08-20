@@ -1,18 +1,39 @@
+"use client";
+
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center px-6">
-      <div className="max-w-xl text-center">
-        <p className="mb-4 text-sm font-medium uppercase tracking-[0.24em] text-foreground/60">
-          Studio
-        </p>
-        <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">
-          Clear digital experiences are on the way.
-        </h1>
-        <p className="mt-6 text-lg text-foreground/70">
-          Web design, UI/UX and development crafted to make brands easier to
-          understand—and easier to choose.
-        </p>
+    <>
+      <main className="site-shell" aria-label="Dheeraj Builds">
+        <p>hello there.</p>
+      </main>
+
+      <div className="preloader" role="status" aria-label="Loading website">
+        <div className="brand">
+          <Image src="/favicon.svg" alt="" width="24" height="24" priority />
+          <span>Dheeraj Builds</span>
+        </div>
+
+        <div className="preloader-media">
+          <video
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+            aria-label="Dheeraj Builds loading animation"
+            width="1920"
+            height="1080"
+            onEnded={(event) =>
+              event.currentTarget
+                .closest(".preloader")
+                ?.classList.add("preloader--leaving")
+            }
+          >
+            <source src="/preloader.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
-    </main>
+    </>
   );
 }
