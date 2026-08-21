@@ -1,12 +1,29 @@
 import type { Metadata } from "next";
+import { Just_Another_Hand, Geist } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const satoshi = localFont({
   src: "./fonts/satoshi-medium.woff2",
   weight: "500",
   style: "normal",
   variable: "--font-satoshi",
+  display: "swap",
+});
+
+const brittany = localFont({
+  src: "./fonts/BrittanySignature.ttf",
+  variable: "--font-signature",
+  display: "swap",
+});
+
+const justAnotherHand = Just_Another_Hand({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-hand",
   display: "swap",
 });
 
@@ -38,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${satoshi.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", satoshi.variable, brittany.variable, justAnotherHand.variable, "font-sans", geist.variable)}
     >
       <head>
         {/* SVG favicon — scales crisp at any size, supports dark/light mode natively */}
