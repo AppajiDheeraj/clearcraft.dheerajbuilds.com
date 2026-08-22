@@ -48,9 +48,14 @@ export default function ClosingFooter() {
 
             <span className="mb-1 mt-4 text-sm">Location:</span>
 
-            <p className="m-0 text-sm text-neutral-400">
+            <a
+              className="text-sm text-neutral-400 no-underline transition-colors hover:text-white"
+              href="https://www.google.com/maps/search/?api=1&query=Bengaluru%2C%20Karnataka%2C%20India"
+              target="_blank"
+              rel="noreferrer"
+            >
               Bengaluru, Karnataka, India
-            </p>
+            </a>
           </address>
 
           <nav
