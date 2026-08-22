@@ -17,7 +17,7 @@ export default function ClosingFooter() {
       </div>
 
       <video
-        className="absolute left-1/2 top-[50svh] z-10 h-[66.7svh] w-auto -translate-x-1/2 -translate-y-[56.5625%] sm:h-[69svh]"
+        className="absolute left-1/2 top-[50svh] z-10 h-[70svh] w-auto -translate-x-1/2 -translate-y-[56.5625%] scale-110 sm:h-[72svh]"
         autoPlay
         loop
         muted
